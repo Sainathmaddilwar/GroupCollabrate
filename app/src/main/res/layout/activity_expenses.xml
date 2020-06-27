@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Expenses">
+
+    <EditText
+        android:id="@+id/ExpenName"
+        android:layout_width="286dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="148dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Your Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Expendetail"
+        android:layout_width="286dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Details"
+        app:layout_constraintEnd_toEndOf="@+id/ExpenName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ExpenName"
+        app:layout_constraintTop_toBottomOf="@+id/ExpenName" />
+
+    <EditText
+        android:id="@+id/ExpenAmount"
+        android:layout_width="286dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Amount"
+        app:layout_constraintEnd_toEndOf="@+id/Expendetail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Expendetail"
+        app:layout_constraintTop_toBottomOf="@+id/Expendetail" />
+
+    <Button
+        android:id="@+id/AddExpenses"
+        android:layout_width="229dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Add Expence"
+        app:layout_constraintEnd_toEndOf="@+id/Date"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/Date"
+        app:layout_constraintTop_toBottomOf="@+id/Date" />
+
+    <EditText
+        android:id="@+id/Date"
+        android:layout_width="286dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Date"
+        app:layout_constraintEnd_toEndOf="@+id/ExpenAmount"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/ExpenAmount"
+        app:layout_constraintTop_toBottomOf="@+id/ExpenAmount" />
+</androidx.constraintlayout.widget.ConstraintLayout>
